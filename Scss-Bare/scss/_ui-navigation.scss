@@ -1,0 +1,72 @@
+ul.nav {
+	li {
+		ul{
+			
+		}
+		li a{
+			
+		}
+	}
+	a, a:visited { 
+		
+	}
+	a:hover, a:active, a:focus , a.activate{ 
+		
+	}
+}
+
+
+nav[role="navigation"] {
+	.main_menu_separator {
+		
+	}	
+	a {
+		
+	}
+	h1 {
+		
+	}
+	> ul {
+		ul {
+			a {
+				
+				&:before {
+					
+				}
+				&:hover {
+					
+				}
+			}
+			li {
+				&:first-child a {
+					
+				}
+				&:last-child a {
+					
+				}
+			}
+		} 
+		> li {
+			&:first-child {
+
+			}
+			&:last-child > a, &.last > a {
+				
+			}
+			> a {
+				
+			}
+			> a:hover, &:hover > a {
+				
+			}
+
+		}
+	}
+	li:hover ul {
+		
+	}
+
+
+}
+
+

@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'KursivschriftLTProStehend';
+	src: url('kursivschriftltpro-stehend-webfont.eot');
+	src: url('kursivschriftltpro-stehend-webfont.eot?iefix') format('eot'),
+		 url('kursivschriftltpro-stehend-webfont.woff') format('woff'),
+		 url('kursivschriftltpro-stehend-webfont.ttf') format('truetype'),
+		 url('kursivschriftltpro-stehend-webfont.svg#webfonthb2qrVKZ') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+$base-font-size: 16px;
+$base-line-height: 24px;
+@include establish-baseline;                                                                     
+
+$font-styles                 : "KursivschriftLTProStehend", Georgia, serif;
+$font-menus                  : "myriad-pro-semi-condensed-1", "myriad-pro-semi-condensed-2", sans-serif;
+$font-textes                 : "myriad-pro-1", "myriad-pro-2", "Myriad pro", sans-serif;
+$font-teletype               : Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;

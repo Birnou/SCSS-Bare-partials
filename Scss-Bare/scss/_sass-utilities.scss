@@ -1,0 +1,14 @@
+// https://github.com/gkcgautam/sass-css-utilities
+
+// BEMify //
+@mixin element($name) {
+  &__#{$name} {
+    @content;
+  }
+}
+
+@mixin modifier($name) {
+  &--#{$name} {
+    @content;
+  }
+ }

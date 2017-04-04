@@ -1,0 +1,35 @@
+form.request-login {
+	input {
+		&[type="button"]{
+			
+		}
+	}
+	fieldset {	
+		li {
+			
+		}
+		h6 {
+			
+		}
+		legend {
+			
+		}
+		input, select, textarea {
+			
+		}
+		&.masque {
+			opacity:0;
+		}
+		&.actif {
+			opacity:1;
+		}
+		&.complete {
+			opacity:0.2;
+		}
+		
+		p {
+			
+
+		}
+	}	
+}

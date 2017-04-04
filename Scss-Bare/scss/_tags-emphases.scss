@@ -1,0 +1,42 @@
+	strong {
+		color:inherit;
+		font-size: 1.05em;
+		font-weight:bold;
+		padding:0 0.25em;
+	}
+	em {
+		color:inherit;
+		font-style:italic;
+		font-weight:200;
+		padding: 0em 0.25em;
+	}
+
+	abbr {
+		background-image: url(info-icone.png);
+		background-repeat: no-repeat;
+		background-position: right top;	
+		padding-right: 14px;
+		color:rgb(103,117,129);
+		font-size:1.05em;
+		font-weight:300;
+		border-bottom:dotted 1px $coul-texte;
+		cursor:pointer;
+	}
+	.small{
+		font-size: 0.85em;
+		font-style: italic;
+		color: $coul-texte;
+	}
+	small {
+		font-size: 0.85em;
+		font-style: italic;
+		padding: 0.4em;
+		margin: 1em 3em;
+		color: $coul-texte;
+		background-color:#f6f6f6;
+		border:1px solid #a6a6a6;
+		display: block;
+		font-weight: normal;
+		text-align:left;
+		@include border-radius(8px);
+	}

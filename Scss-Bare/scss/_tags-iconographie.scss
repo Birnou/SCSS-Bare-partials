@@ -1,0 +1,20 @@
+@mixin iconise ($top, $icone) {
+	background-repeat: no-repeat;
+	background-position: left $top;
+	background-color: transparent;
+	background-image: url($icone);
+}
+
+$list-icone-ressources: 'url' 'article' 'document';
+@each $i in $list-icone-ressources {
+	main.main ul li.#{$i} {
+		@include iconise( 0.7em ,#{$i}'.gif') ;
+	}
+}
+
+$list-icone-todolist: 'off' 'on' 'run';
+@each $i in $list-icone-todolist {
+	main.main article ul li.#{$i} {
+		@include iconise(0.5em,#{$i}'.png');
+	}
+}

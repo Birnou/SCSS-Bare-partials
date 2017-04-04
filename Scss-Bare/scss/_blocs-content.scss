@@ -1,0 +1,7 @@
+main {
+	&.main {
+		@extend %containerWindow;
+		color:$coul-texte;
+		
+	} 
+}

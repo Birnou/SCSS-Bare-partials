@@ -1,0 +1,70 @@
+$coul-alert: red;
+$coul-alertBG: rgba(178,178,0,0.46);
+$coul-alertGreyOut:rgba(112,112,112,0.50) ;
+// https://bitsofco.de/linting-html-using-css/
+@mixin message-alert($arg:'Erreur de message') {
+	body {
+		&:before {
+			content: $arg;
+			display:block;
+			width:100%;
+			line-height: 20px;
+			background-color: $coul-alertBG;
+			text-align:center;
+		}
+	}
+}
+// ----------------------------------------------------------------- //
+* {
+	&[data-rel = "TODO"] {
+		color:$coul-alert!important;
+		background-color: $coul-alertBG!important;
+		padding: 8px!important;
+		display: inline-block!important;
+	}
+	&[data-rel="TO DO"] {
+		display:none;
+	}
+	&[style] { 
+	    outline: 5px solid $coul-alert; 
+	}
+}
+a {
+	.TODO {
+		color:$coul-alertGreyOut;
+	}
+	&:not([href]),  
+	&[href="#"],  
+	&[href=""] {
+		color:$coul-alert!important;
+	}  
+	&[href*="javascript:void(0)"] {
+		color:$coul-alert!important;
+		text-decoration: line-through;
+	}  
+}
+img{
+	&:not([alt]),
+	&[alt=""] {
+		outline: 3px solid $coul-alert;
+	}
+}
+html {
+	&:not([lang]),  
+	&[lang=""] { 
+		@include message-alert("Attribut lang missing!");
+	}
+}
+meta {
+	&[charset]:not([charset="UTF-8"]) ,
+	&[charset="UTF-8"]:not(:first-child) { 
+		@include message-alert("Bad caracter encoding!");
+	} 
+	&[name="viewport"] {
+		&[content*="user-scalable=no"],  
+		&[content*="maximum-scale"],  
+		&[content*="minimum-scale"] {
+			@include message-alert("Viewport definition missing!");
+		} 
+	} 
+}

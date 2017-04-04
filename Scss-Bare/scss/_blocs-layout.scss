@@ -1,0 +1,45 @@
+$bp-mobile:20em;
+$bp-tablet:48em;
+$bp-desktop:60em;
+$bp-widescreen:83em;
+
+$susy: (
+  columns: 16,
+  gutters: 1/2,
+  math: fluid,
+  output: float,
+  gutter-position: inside
+); 
+
+body {
+	
+}
+.container {
+	& > nav {
+		
+	}
+	& > header {
+		
+	}
+	& > .breadcrumb {
+		
+	}
+	& > aside {
+		
+	}
+	& > main {
+		
+	}
+	& > footer {
+		
+	}
+}
+.tooltip {
+		
+}
+.mainWindow {
+		
+}
+.sideWindow {
+		
+}

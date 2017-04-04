@@ -1,0 +1,20 @@
+%contentWindow {
+	float: right;
+	display: block;
+	width: 20px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	cursor:pointer;
+	text-indent:-9999px;
+}
+%containerWindow {
+	background-color: #fff;
+	border: solid 1px #e3dfdf;
+	@include border-radius(8px);
+}
+%textareaEdition {
+	padding-left:1em;
+	height:18px;;
+	@include box-shadow;
+	@include border-radius(5px);
+}

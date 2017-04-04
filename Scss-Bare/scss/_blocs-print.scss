@@ -1,0 +1,42 @@
+// http://edutechwiki.unige.ch/en/CSS_for_print_tutorial
+@media print {
+ 	body {
+ 		width:90%;
+		background: white;
+ 	}
+ 	.container {
+ 		@extend %bloc-print;
+		& > nav, 
+		& > header,
+		& > aside,
+		& > footer {	
+			display: none;
+		}
+		& > .breadcrumb {
+		}
+		& > main {
+			@extend %bloc-print; 
+		}
+	}
+	a[href^="http://"]:after,
+	a[href^="https://"]:after,
+	a[href^="ftp://"]:after {
+	  content: " (" attr(href) ")";
+	  color: blue;
+	  font-size: small;
+	}
+	.tooltip, 
+	.mainWindow, 
+	.sideWindow {
+		display: none;	
+	}
+}
+
+%bloc-print {
+	width: auto;
+	border: 0;
+	margin: 0 5%;
+	padding: 0;
+	background: white;
+	float: none !important;
+}
