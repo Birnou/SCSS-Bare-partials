@@ -4,7 +4,9 @@ It is possible to retrieve a prepared tree https://github.com/mehmetkose/skeleto
 
 As far as I am concerned since several projects, including sites and web applications, I work with a slightly different approach, on the one hand on the number of layers, and on the other hand, in terms of grouping.
 
-It is true that I did not discover ITCSS until much later, but if we take the principle of the inverted triangle, but this time in the form of a square, since in this case the use of IDs is allowed, especially at the level Dialogs, UIs, comps and pages, here is the representation that this can give.
+> It is true that I did not discover ITCSS until much later, but if we take the principle of the inverted triangle, but this time in the form of a square, since in this case the use of IDs is allowed, especially at the level Dialogs, UIs, comps and pages, here is the representation that this can give.
+
+## View and definitions of _partials layers
 
 ![alt text](http://www.puce-et-media.com/externals/002-Sass-004.png "View of _partials layers")
 
