@@ -6,6 +6,8 @@ As far as I am concerned since several projects, including sites and web applica
 
 It is true that I did not discover ITCSS until much later, but if we take the principle of the inverted triangle, but this time in the form of a square, since in this case the use of IDs is allowed, especially at the level Dialogs, UIs, comps and pages, here is the representation that this can give.
 
+![alt text](http://www.puce-et-media.com/externals/002-Sass-004.png "View of _partials layers")
+
 * **Sass**, allows to group all the settings both at the preprocessor level *(parameters, variables and map at global level, environment ...)*, as well as the definition of typos and other colors used by the theme, but also various @mixins ,%holders, debug layer, CSS reset, global sprite management, ... of course at the global level. For example variables specific to certain tags, will be found at the levels of the tags in question.
 * **Blocks**, frames the main blocks of the page *(&lt;header&gt;, &lt;footer&gt;, &lt;aside&gt;, &lt;main&gt; ...)*, distinguishing between .main and .content classes, or even .container classes. The presence of a special block like _blocs-layout.scss, which can itself be declined *(_blocs-layout-tablet, _blocs-layout-phone ...)*, which allows to manage the disposition according to the devices, _blocs-layout-print.scss which manages the distribution of blocks to printing.
 * **Tags**, as the name suggests brings together low-level selectors by grouping them by families as much as possible, links, lists, media, typo ... and taking care to add a _tags-singles.scss which allows to group All type of singlet type &lt;hr&gt;, &lt;br&gt; and other elements of this type and a _tags-blocs.scss *(for &lt;div&gt;, &lt;span&gt;)*.
