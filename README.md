@@ -4,7 +4,7 @@ It is possible to retrieve a prepared tree https://github.com/mehmetkose/skeleto
 
 As far as I am concerned since several projects, including sites and web applications, I work with a slightly different approach, on the one hand on the number of layers, and on the other hand, in terms of grouping.
 
-> It is true that I did not discover ITCSS until much later, but if we take the principle of the inverted triangle, but this time in the form of a square, since in this case the use of IDs is allowed, especially at the level Dialogs, UIs, comps and pages, here is the representation that this can give.
+> It is true that I did not discover [ITCSS](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528) until much later, but if we take the principle of the inverted triangle, but this time in the form of a square, since in this case the use of IDs is allowed, especially at the level Dialogs, UIs, comps and pages, here is the representation that this can give.
 
 ## View and definitions of _partials layers
 
@@ -18,3 +18,6 @@ As far as I am concerned since several projects, including sites and web applica
 * **Dialogs**,   attention not to be confused with the interface components, we are   talking here only of dialog that are generally floating, modal or not. This type of object is recurrent, and many, in web applications, and having a .scss document by dialog is not superfluous.
 * **Pages**,   this coding group aligns well with the concept of [CSS signatures](http://archivist.incutio.com/viewlist/css-discuss/13291)   introduced by Eric Meyer in 2002, which makes it possible to distinguish   the nature of the page (template or not). Moreover, at the level of the page, the concept of theme, and skin, can completely take its meaning.
 * **Accessibility**,   this layer is purely dedicated to the support of the accessibility,   therefore of possible alternative CSS sheets,   *(_accessibility-audio.scss, _accessibility-aria.scss,   _accessibility-print.scss ...)* may also be declined.
+
+## Nature des fichiers
+
