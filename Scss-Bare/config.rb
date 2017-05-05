@@ -1,5 +1,10 @@
 require 'susy'
 require 'breakpoint'
+require 'scut' 
+require 'normalize-scss' 
+
+require 'compass/import-once/activate'
+
 
 
 http_path = "/"
@@ -8,6 +13,8 @@ sass_dir = "sass"
 images_dir = "imgs"
 javascripts_dir = "js"
 fonts_dir = "fonts"
+
 relative_assets = true
 line_comments = false
-output_style = :compressed 
+environment = :development; # :production
+output_style = (environment == :production) ? :compressed : :expanded
